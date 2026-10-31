@@ -1,3 +1,15 @@
+> **ProFit fork.** A maintained fork of [`moment-holiday@1.5.1`](https://www.npmjs.com/package/moment-holiday)
+> by Kodie Grantham ([kodie/moment-holiday](https://github.com/kodie/moment-holiday), MIT), which is deprecated
+> on npm and archived upstream. This branch (`profit`) ships the published 1.5.1 files unchanged
+> (`build/` and `locale/` match the npm tarball byte for byte) and only modernizes the packaging:
+> `moment` is a peer dependency (so the plugin always patches your app's moment), `engines` is
+> `node >=22`, and the tests run under `node --test` — upstream's suite through a small ava shim, plus
+> every holiday from 2015 through 2045 recorded from the published 1.5.1.
+>
+> ```bash
+> npm install github:m-s-morgan/moment-holiday#v1.5.2
+> ```
+
 # moment-holiday
 [![npm package version](https://img.shields.io/npm/v/moment-holiday.svg?style=flat-square)](https://www.npmjs.com/package/moment-holiday) [![Travis build status](https://img.shields.io/travis/kodie/moment-holiday.svg?style=flat-square)](https://travis-ci.org/kodie/moment-holiday) [![npm package downloads](https://img.shields.io/npm/dt/moment-holiday.svg?style=flat-square)](https://www.npmjs.com/package/moment-holiday) [![build/moment-holiday.min.js file size](https://img.shields.io/github/size/kodie/moment-holiday/build/moment-holiday.min.js.svg?style=flat-square)](build/moment-holiday.min.js) [![license](https://img.shields.io/github/license/kodie/moment-holiday.svg?style=flat-square)](LICENSE.md)
 

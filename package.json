@@ -1,7 +1,7 @@
 {
   "name": "moment-holiday",
-  "version": "1.5.1",
-  "description": "A Moment.js plugin for handling holidays.",
+  "version": "1.5.2",
+  "description": "A Moment.js plugin for handling holidays (ProFit fork of moment-holiday@1.5.1, maintained for current Node.js).",
   "keywords": [
     "moment",
     "momentjs",
@@ -26,34 +26,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kodie/moment-holiday.git"
+    "url": "git+https://github.com/m-s-morgan/moment-holiday.git"
   },
   "bugs": {
-    "url": "https://github.com/kodie/moment-holiday/issues"
+    "url": "https://github.com/m-s-morgan/moment-holiday/issues"
   },
-  "homepage": "https://github.com/kodie/moment-holiday",
+  "homepage": "https://github.com/m-s-morgan/moment-holiday",
   "license": "MIT",
   "main": "./build/moment-holiday-us.min.js",
   "files": [
     "build/",
     "locale/"
   ],
-  "dependencies": {
-    "moment": ">=2.0.0"
-  },
   "devDependencies": {
-    "ava": ">=0.10.0",
-    "gulp": ">=3.0.0",
-    "gulp-concat": ">=2.0.0",
-    "gulp-if": ">=2.0.0",
-    "gulp-inject-string": ">=1.0.0",
-    "gulp-rename": ">=1.0.0",
-    "gulp-sourcemaps": ">=2.0.0",
-    "gulp-uglify": ">=3.0.0",
-    "jshint": ">=2.9.1",
-    "yargs": ">=8.0.0"
+    "moment": "^2.31.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jshint *.js locale/*.js && ava"
+    "test": "node --test test/"
+  },
+  "contributors": [
+    "Matt Morgan <matt@pr.fit>"
+  ],
+  "peerDependencies": {
+    "moment": ">=2.0.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

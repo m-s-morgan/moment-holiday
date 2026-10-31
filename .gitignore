@@ -2,7 +2,12 @@
 index.js
 npm-debug.log
 node_modules
+package-lock.json
 /build/*
+!/build/moment-holiday.js
+!/build/moment-holiday-ar.js
+!/build/moment-holiday-ar.min.js
+!/build/moment-holiday-ar.min.js.map
 !/build/moment-holiday-pkg.min.js
 !/build/moment-holiday-pkg.min.js.map
 !/build/moment-holiday-us.min.js

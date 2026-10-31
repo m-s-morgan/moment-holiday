@@ -1,5 +1,8 @@
-import test from 'ava';
-import moment from './moment-holiday.js';
+'use strict';
+
+// upstream's ava suite (v1.5.1), run under node --test through a minimal ava-style shim
+var test = require('./ava-shim');
+var moment = require('../moment-holiday.js');
 
 var emsgs = [
   'holiday() function should return a single moment object or an object of moment objects when holidays are found.',
@@ -42,7 +45,7 @@ var emsgs = [
 ];
 
 var locales = [];
-var localePath = require('path').join(__dirname, 'locale');
+var localePath = require('path').join(__dirname, '..', 'locale');
 require('fs').readdirSync(localePath).forEach(function(file){
   var locale = file.substring(0, file.lastIndexOf('.'));
   moment.modifyHolidays.load(locale);
